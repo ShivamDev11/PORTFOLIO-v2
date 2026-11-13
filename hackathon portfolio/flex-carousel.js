@@ -119,7 +119,7 @@ export const DEFAULT_ITEMS = [
     title: 'MedChem',
     subtitle: 'AI-Powered Pharmacy Management System',
     description: 'A full-featured pharmacy dashboard with inventory tracking, sales management, expiry alerts, low-stock warnings, and an integrated AI Assistant for smart operations.',
-    link: 'https://medchem-r71uteen8-shivams-projects-10e46854.vercel.app/login',
+    link: 'https://medchem-smart-pharmacy-system.vercel.app/login',
     deliverables: ['Pharmacy Dashboard', 'Inventory & Stock Alerts', 'Expiry Tracker', 'AI Assistant Integration'],
     tools: ['React', 'JavaScript', 'Tailwind CSS', 'Vercel']
   }

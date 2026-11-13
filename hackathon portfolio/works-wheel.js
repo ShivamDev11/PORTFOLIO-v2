@@ -172,8 +172,8 @@ export const DEFAULT_WORKS = [
     description: "A full-featured pharmacy dashboard with inventory tracking, sales management, expiry alerts, low-stock warnings, and an integrated AI Assistant for smart operations.",
     image: "Project Images/medchem.png",
     src: "Project Images/medchem.png",
-    href: "https://medchem-r71uteen8-shivams-projects-10e46854.vercel.app/login",
-    link: "https://medchem-r71uteen8-shivams-projects-10e46854.vercel.app/login",
+    href: "https://medchem-smart-pharmacy-system.vercel.app/login",
+    link: "https://medchem-smart-pharmacy-system.vercel.app/login",
     stats: "Pharmacy Dashboard • Expiry Tracker • AI Assistant",
     tools: ["React", "JavaScript", "Tailwind CSS", "Vercel"],
     deliverables: ["Inventory & Stock Alerts", "Expiry Tracker", "AI Assistant Integration"]
