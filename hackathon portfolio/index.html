@@ -251,6 +251,263 @@
       color: #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    img,
+    video,
+    canvas,
+    svg {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1023px) {
+      [data-purpose="site-navigation"] > nav {
+        display: none !important;
+      }
+
+      #mobile-menu-btn {
+        display: inline-flex !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      [data-purpose="site-navigation"] {
+        padding: 1rem 0.75rem 0.75rem;
+        gap: 0.5rem;
+      }
+
+      [data-purpose="site-navigation"] > div:last-child {
+        gap: 0;
+        padding: 0.25rem;
+      }
+
+      [data-purpose="site-navigation"] > div:last-child a {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+
+      #mobile-menu-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 0;
+      }
+
+      #mobile-drawer-content {
+        width: min(88vw, 24rem);
+        padding: clamp(1.25rem, 6vw, 2rem);
+      }
+
+      #home {
+        padding-inline: 1rem;
+        padding-top: 1.25rem;
+        padding-bottom: 3.5rem;
+      }
+
+      #hero-title {
+        font-size: clamp(2.5rem, 12.5vw, 5.5rem);
+        line-height: 0.9;
+        overflow-wrap: anywhere;
+      }
+
+      #home .hero-portrait-mask {
+        width: min(82vw, 20rem);
+        height: min(108vw, 25rem);
+      }
+
+      #home .grid {
+        row-gap: 0.5rem;
+      }
+
+      #home .grid > div {
+        padding-inline: 0.25rem;
+      }
+
+      #home .grid > div:last-child {
+        max-width: 34rem;
+        width: 100%;
+      }
+
+      #sem-media-container {
+        width: min(300px, calc(100vw - 2rem)) !important;
+        height: min(400px, calc(100dvh - 7rem)) !important;
+      }
+
+      #sem-media-content {
+        padding: clamp(0.75rem, 4vw, 1.25rem);
+      }
+
+      #sem-media-content > div:first-child,
+      #sem-media-content > div:last-child > div:first-child {
+        flex-wrap: wrap;
+      }
+
+      #sem-media-content > div:first-child span {
+        white-space: normal;
+      }
+
+      #sem-media-content > div:last-child > div:last-child {
+        flex-wrap: wrap;
+      }
+
+      #sem-title-first,
+      #sem-title-rest {
+        font-size: clamp(2.75rem, 12vw, 4rem);
+      }
+
+      #skills,
+      #projects,
+      #landing-pages,
+      #services {
+        padding-inline: 1rem;
+      }
+
+      #skills > div > div:first-child > div:last-child {
+        gap: clamp(0.75rem, 4vw, 2rem);
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      #skills > div > div:first-child > div:last-child > div {
+        min-width: 0;
+      }
+
+      #skills > div > div:first-child > div:last-child span:last-child {
+        font-size: 0.55rem;
+        letter-spacing: 0.04em;
+      }
+
+      #experience {
+        height: auto !important;
+      }
+
+      #exp-sticky-viewport {
+        position: relative !important;
+        top: auto !important;
+        height: auto !important;
+        min-height: 100svh;
+        overflow: visible !important;
+      }
+
+      #exp-sticky-viewport > header {
+        padding: 1rem;
+        gap: 0.75rem;
+      }
+
+      #exp-hud-phase {
+        max-width: 70%;
+        line-height: 1.5;
+      }
+
+      #exp-horizontal-stage {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        height: auto !important;
+        transform: none !important;
+      }
+
+      .exp-panel {
+        width: 100% !important;
+        min-height: 100svh;
+        padding: 5rem 1.25rem !important;
+      }
+
+      .exp-panel h2,
+      .exp-panel h3 {
+        overflow-wrap: anywhere;
+      }
+
+      .exp-panel > div:first-child > div:first-child {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      #exp-sticky-viewport > footer {
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+
+      #exp-sticky-viewport > footer > div {
+        flex-wrap: wrap;
+      }
+
+      #flex-carousel-container {
+        height: clamp(25rem, 72svh, 35rem) !important;
+        border-radius: 1.25rem;
+      }
+
+      #landing-pages > div[style*="height: 640px"] {
+        height: clamp(26rem, 75svh, 40rem) !important;
+        min-height: 26rem !important;
+      }
+
+      .accordion-item {
+        padding-inline: 1rem;
+      }
+
+      .accordion-item .accordion-content > div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .accordion-item .accordion-content > div span {
+        overflow-wrap: anywhere;
+      }
+
+      #contact > div {
+        padding-inline: 1rem;
+      }
+
+      #contact > div > div:last-child > div:last-child {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        overflow-wrap: anywhere;
+      }
+
+      #project-modal-card {
+        width: calc(100vw - 1.5rem);
+        max-height: calc(100dvh - 1.5rem);
+        border-radius: 1.5rem;
+        padding: 1.25rem;
+      }
+
+      #toast-container {
+        left: 1rem;
+        right: 1rem;
+        bottom: max(1rem, env(safe-area-inset-bottom));
+      }
+
+      #toast-container > * {
+        max-width: 100%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #home .hero-portrait-mask {
+        width: min(38vw, 30rem);
+        height: min(46vw, 36rem);
+      }
+
+      .exp-panel {
+        padding-inline: 3rem;
+      }
+
+      #flex-carousel-container {
+        height: clamp(30rem, 65vh, 35rem) !important;
+      }
+    }
   </style>
 </head>
 <body class="antialiased text-[#111] bg-[#FAFAFA]">
